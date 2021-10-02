@@ -1,0 +1,4 @@
+# @install: lix --silent download "haxelib:/systools#1.1.0" into systools/1.1.0/haxelib
+-cp ${HAXE_LIBCACHE}/systools/1.1.0/haxelib/
+-D systools=1.1.0
+-lib ndll:${HAXE_LIBCACHE}/systools/1.1.0/haxelib/ndll/

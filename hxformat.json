@@ -1,0 +1,29 @@
+{
+  "indentation": {
+    "character": "  ",
+    "trailingWhitespace": false
+  },
+  "sameLine": {
+    "ifBody": "same",
+    "elseBody": "same",
+    "ifElse": "same",
+    "forBody": "same",
+    "whileBody": "same",
+    "doWhile": "same",
+    "tryCatch": "same",
+    "tryBody": "next",
+    "catchBody": "next",
+    "caseBody": "next",
+    "expressionCase": "same"
+  },
+  "lineEnds": {
+    "leftCurly": "after",
+    "rightCurly": "after",
+    "emptyCurly": "noBreak"
+  },
+  "emptyLines": {
+    "afterLeftCurly": "remove",
+    "afterFieldsWithDocComments": "none",
+    "finalNewline": false
+  }
+}

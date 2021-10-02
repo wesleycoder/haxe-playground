@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.sortImports": true
+  },
+  "haxe.enableCodeLens": true,
+  "haxe.enableExtendedIndentation": true,
+  "search.exclude": {
+    "export/**/*": true
+  },
+  "codedox": {
+    "autoInsertHeader": false
+  },
+  "haxecheckstyle.sourceFolders": ["src"]
+}
