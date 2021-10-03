@@ -1,0 +1,73 @@
+import hxp.*;
+import lime.tools.*;
+
+class Project extends HXProject {
+  public function new () {
+    super ();
+
+    meta = {
+      title: "Hello World!",
+      version: "0.0.1",
+      company: "Wésley Queiroz",
+      packageName: "com.tavern.helloworld",
+    };
+
+    app = {
+      file: "HelloWorld",
+      main: "Main",
+      preloader: "flixel.system.FlxPreloader",
+      swfVersion: 11.8,
+      path: 'export',
+    };
+
+    haxelibs.push(new Haxelib("lime"));
+    haxelibs.push(new Haxelib("flixel"));
+
+    sources.push("src");
+
+    assets.push(new Asset("assets"));
+
+    window = {
+      fps: 60,
+      hardware: true,
+      vsync: true,
+    };
+
+    if (!Haxelib.debug) {
+      haxedefs.set("FLX_NO_DEBUG", 1);
+      haxedefs.set("NAPE_RELEASE_BUILD", 1);
+    }
+
+    if (platformType == PlatformType.WEB) {
+      window = {
+      fps: 0,
+        background: 0x000000,
+        resizable: true,
+      };
+    }
+
+    if (platformType == PlatformType.DESKTOP) {
+      haxedefs.set("FLX_NO_TOUCH", 1);
+
+      window = {
+        orientation: Orientation.LANDSCAPE,
+        fullscreen: false,
+        resizable: true,
+      };
+    }
+
+    if (platformType == PlatformType.MOBILE) {
+      haxedefs.set("FLX_NO_MOUSE", 1);
+      haxedefs.set("FLX_NO_KEYBOARD", 1);
+
+      window = {
+        orientation: Orientation.LANDSCAPE,
+        fullscreen: true,
+      };
+    }
+
+    // if (target == Platform.IOS && targetFlags.exists("simulator")) {
+    //   trace ("Targeting the iOS simulator");
+    // }
+  }
+}

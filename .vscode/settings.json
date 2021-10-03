@@ -12,5 +12,6 @@
   "codedox": {
     "autoInsertHeader": false
   },
-  "haxecheckstyle.sourceFolders": ["src"]
+  "haxecheckstyle.sourceFolders": ["src"],
+  "haxe.executable": "/usr/local/bin/haxe"
 }
