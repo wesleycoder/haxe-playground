@@ -1,3 +1,0 @@
-# @install: lix --silent download "haxelib:/flixel-templates#2.6.6" into flixel-templates/2.6.6/haxelib
--cp ${HAXE_LIBCACHE}/flixel-templates/2.6.6/haxelib/
--D flixel-templates=2.6.6

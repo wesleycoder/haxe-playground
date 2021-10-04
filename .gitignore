@@ -89,3 +89,6 @@ typings/
 
 # Haxe exports
 /export
+
+# MacOS
+**/.DS_Store

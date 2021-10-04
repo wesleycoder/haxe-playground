@@ -13,5 +13,6 @@
     "autoInsertHeader": false
   },
   "haxecheckstyle.sourceFolders": ["src"],
-  "haxe.executable": "/usr/local/bin/haxe"
+  "haxe.executable": "/usr/local/bin/haxe",
+  "lime.executable": "/usr/local/bin/lime"
 }

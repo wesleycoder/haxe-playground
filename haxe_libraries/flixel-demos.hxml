@@ -1,3 +1,0 @@
-# @install: lix --silent download "haxelib:/flixel-demos#2.8.0" into flixel-demos/2.8.0/haxelib
--cp ${HAXE_LIBCACHE}/flixel-demos/2.8.0/haxelib/
--D flixel-demos=2.8.0
